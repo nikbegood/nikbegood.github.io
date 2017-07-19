@@ -1,0 +1,17 @@
+exclude:
+ - package.json
+ - gulpfile.js
+ - node_modules
+ - css
+
+future: true
+
+social-links:
+ - name: mail
+   href: //mail.ru
+ - name: vk
+   href: //vk.com
+ - name: instagram
+   href: //instagram.com
+ - name: twitter
+   href: //twitter.com

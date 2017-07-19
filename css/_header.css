@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 360px;
+    justify-content: space-around;
+    background: url("/_site/code.png");
+}
+.name{
+    width: 100%;
+}

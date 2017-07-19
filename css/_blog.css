@@ -1,0 +1,19 @@
+main.blog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.widgets{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.tag-list{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.tag-item{
+    display: inline-block;
+    background: blue;
+    color: #000;
+    padding: 3px 8px;
+}

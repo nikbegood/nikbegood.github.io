@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<main>
+    <div class="bio">
+        <img class="bio1" src="/bio1.jpg" alt="bio">
+        <p id="name">Nikita Tsymbalenko</p>
+        <p id="pro">Web Developer/Publicist</p>
+        <div class="twitter">
+            <ul>
+                <li>
+                    <a href="//twitter.com/nikbegood" target="_blank"><img src="twit.png" alt="twitter"></a>
+                </li>
+                <li>
+                    <a href="//ukr.net" target="_blank"><img src="email.png" alt="email"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="blog-list">
+        <p>Lasts posts</p>
+        {% for post in site.posts %}
+        <ul>
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+        </ul>
+        {% endfor %}
+    </div>
+</main>

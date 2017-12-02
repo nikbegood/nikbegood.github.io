@@ -2,7 +2,8 @@
 layout: post
 title: Where do humanity lead the globalization process?
 tags: [globalization, humanity, politics]
-date: 2017-06-18 23:00 +0300
+feature: https://stream.org/wp-content/uploads/Globalization-900.jpg
+comments: true
 ---
 In the modern world, the largest and most influential planetary phenomenon is globalization.
 The era of global change, the scale of which is widening day by day, brings us to the question 

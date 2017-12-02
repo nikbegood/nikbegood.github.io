@@ -2,7 +2,8 @@
 layout: post
 title: Information and communicative space of modern society
 tags: [science, information, communication, space, society, Internet technology, сyberspace, culture]
-date: 2017-06-16 14:00 +0300
+feature: http://www.blackfabulousity.com/wp-content/uploads/2013/09/a1-tubepink-e1378334520444.jpg
+comments: true
 ---
 The article describes the approaches to the understanding of information and communication space, analyzes the ratio of information and cultural space. 
 The processes of informatization and implementation of Internet technologies into society, trying to control the Internet space by countries, the negative aspects of the impact of the worldwide web. 

@@ -3,12 +3,14 @@ const spawn = require('child_process').spawn;
 const exec = require('child_process').exec;
 const bs = require('browser-sync').create();
 const css = require('gulp-css');
+const sass = require('gulp-sass');
 const path = {
     html: ['*.html', '_includes/*.html', '_layouts/*.html'],
-    css: 'css/**/*.css'
+    css: 'css/**/*.css',
+    sass: './sass/**/*.scss'
 };
 
-gulp.task('jekyll:build',['css'], function(done){
+gulp.task('jekyll:build',['sass'], function(done){
     spawn('jekyll',['build'],{
         shell: true,
         stdio: 'inherit'
@@ -21,6 +23,16 @@ gulp.task('browser-sync', ['jekyll:build'], function(){
             baseDir: "_site"
         }
     });
+});
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('assets/styles'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
 gulp.task('css', function () {
@@ -38,6 +50,8 @@ gulp.task('jekyll:rebuild', ['jekyll:build'], function(){
 gulp.task('watch', function(){
     gulp.watch(path.html, ['jekyll:rebuild'])
     gulp.watch(path.css, ['css']);
+    gulp.watch(path.sass, ['sass']);
+
 });
 
 gulp.task('serve', ['browser-sync', 'watch']);

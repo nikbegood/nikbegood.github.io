@@ -1,8 +1,14 @@
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.jpg'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false
+
 exclude:
  - package.json
  - gulpfile.js
  - node_modules
- - css
+ - sass
 
 future: true
 

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <title>gallery</title>
+    
+  <link rel="stylesheet" href="/jekyll-vue/css/photo.css">
+  
+</head>
+<body>
+    <div class="nav">
+  <ul>
+    <li>
+      <a href="/jekyll-vue/main">Home
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#">About
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+    <li>
+      <a href="/jekyll-vue/main/contact">Contact
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="carousel">
+    <carousel-3d :autoplay="true" :autoplay-timeout="2400">
+        <slide :index="0"><img src="https://farm5.staticflickr.com/4696/39405774495_3d7dd4f935_z.jpg" /></slide>
+        <slide :index="1"><img src="https://farm5.staticflickr.com/4720/25484594867_9e8cd902ef_z.jpg" /></slide>
+        <slide :index="2"><img src="https://farm5.staticflickr.com/4618/38546336200_bf04154386_z.jpg" /></slide>
+        <slide :index="3"><img src="https://farm5.staticflickr.com/4749/26454287238_1055af13a0_z.jpg" /></slide>
+        <slide :index="4"><img src="https://farm5.staticflickr.com/4655/25475838127_150908699c_z.jpg" /></slide>
+        <slide :index="5"><img src="https://farm5.staticflickr.com/4696/40348326571_3c75b663b4_z.jpg" /></slide>
+        <slide :index="6"><img src="https://farm5.staticflickr.com/4602/26448356428_647ac9c5e0_z.jpg" /></slide>
+        <slide :index="7"><img src="https://farm5.staticflickr.com/4712/25431933847_4b09c92bd3_z.jpg" /></slide>
+        <slide :index="8"><img src="https://farm5.staticflickr.com/4716/38512013770_6c91169974_z.jpg" /></slide>
+    </carousel-3d>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+<script src="/jekyll-vue/js/vue-carousel-3d.min.js"></script>
+
+<script type="text/javascript">
+    new Vue({
+  el: '#carousel',
+  data: {
+    slides: 8
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  }
+})
+</script>
+</body>
+</html>

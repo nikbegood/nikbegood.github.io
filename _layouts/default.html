@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <title>gallery</title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/jekyll-vue/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+<div class="nav">
+  <ul>
+    <li>
+      <a href="#">Home
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+    <li>
+      <a href="#">About
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.baseurl }}/jekyll-vue/main/contact">Contact
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+  <div class="main">
+  <div class="gallery">
+    <a href="{{ site.baseurl }}/jekyll-vue/main/photos" style="text-decoration: none;color:white;"><h4>VIEW PHOTOS</h4></a>
+  </div>
+  <div class="social">
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest-p"></a>
+  </div>
+ </div>
+
+    <script  src="{{ site.baseurl }}/jekyll-vue/js/index.js"></script>
+  </body>
+</html>
